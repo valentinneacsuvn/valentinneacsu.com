@@ -216,13 +216,30 @@ btn.onclick=()=>{
 
 const lang=btn.textContent.toLowerCase();
 
-document.querySelector('a[href="#portfolio"]').textContent=translations[lang].portfolio;
+const t=translations[lang];
 
-document.querySelector('a[href="#about"]').textContent=translations[lang].about;
+document.querySelector('a[href="#portfolio"]').textContent=t.portfolio;
+document.querySelector('a[href="#about"]').textContent=t.about;
+document.querySelector('a[href="#contact"]').textContent=t.contact;
 
-document.querySelector('a[href="#contact"]').textContent=translations[lang].contact;
+document.querySelector(".button").textContent=t.button;
 
-document.querySelector(".button").textContent=translations[lang].button;
+document.querySelector(".hero h2").textContent=t.title;
+document.querySelector(".hero p").textContent=t.location;
+
+document.querySelector("#about h2").textContent=t.aboutTitle;
+document.querySelector("#about p").textContent=t.aboutText;
+
+document.querySelector("#contact h2").textContent=t.inquiry;
+document.querySelector("#contact p").textContent=t.subtitle;
+
+document.querySelector('input[name="name"]').placeholder=t.name;
+document.querySelector('input[name="email"]').placeholder=t.email;
+document.querySelector('input[name="company"]').placeholder=t.company;
+document.querySelector('input[name="project"]').placeholder=t.project;
+document.querySelector('textarea[name="message"]').placeholder=t.message;
+
+document.querySelector('button[type="submit"]').textContent=t.send;
 
 };
 
