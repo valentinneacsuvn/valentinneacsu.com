@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,7 +9,7 @@
 
 <meta name="description" content="Professional photographer and filmmaker based in Switzerland. Portrait, Fashion, Commercial, Automotive, Events and Creative Storytelling. Available worldwide.">
 
-<meta name="keywords" content="Valentin Neacsu, Photographer Switzerland, Photographer Zurich, Fashion Photographer, Portrait Photographer, Commercial Photographer, Automotive Photographer, Filmmaker Switzerland">
+<meta name="keywords" content="Valentin Neacsu, Photographer Switzerland, Photographer Zurich, Fashion Photographer, Portrait Photographer, Commercial Photographer, Automotive Photographer, Event Photographer, Filmmaker Switzerland">
 
 <meta property="og:title" content="Valentin Neacsu">
 <meta property="og:description" content="Photography & Filmmaking">
@@ -63,12 +64,12 @@ VALENTIN NEACSU
 
 <h2 id="hero-title">Photography • Filmmaking</h2>
 
-<p>
-Based in Switzerland.
+<p id="hero-location">
+Based in Switzerland.<br>
 Available worldwide.
 </p>
 
-<a href="#portfolio" class="button">
+<a href="#portfolio" class="button" id="hero-button">
 Explore Portfolio
 </a>
 
@@ -82,12 +83,12 @@ Explore Portfolio
 
 <div class="gallery">
 
-<img src="photo 1.jpg" loading="lazy">
-<img src="photo 2.jpg" loading="lazy">
-<img src="photo 3.jpg" loading="lazy">
-<img src="photo 4.jpg" loading="lazy">
+<img src="photo 1.jpg" loading="lazy" alt="Portfolio Image">
+<img src="photo 2.jpg" loading="lazy" alt="Portfolio Image">
+<img src="photo 3.jpg" loading="lazy" alt="Portfolio Image">
+<img src="photo 4.jpg" loading="lazy" alt="Portfolio Image">
 
-<!-- Duplica estas líneas cuando añadas más fotografías -->
+<!-- Añade aquí más imágenes -->
 
 </div>
 
@@ -97,9 +98,13 @@ Explore Portfolio
 
 <div class="container">
 
-<h2>About</h2>
+<h2 id="about-title">
 
-<p>
+About
+
+</h2>
+
+<p id="about-text">
 
 I'm Valentin Neacsu, a visual artist and photographer based in Switzerland.
 
@@ -129,37 +134,48 @@ I believe every project deserves its own visual identity, combining artistic vis
 
 <div class="container">
 
-<h2>Inquiry</h2>
+<h2 id="contact-title">
 
-<p>
+Inquiry
+
+</h2>
+
+<p id="contact-subtitle">
+
 Let's create something meaningful together.
+
 </p>
 
 <form action="https://formsubmit.co/valentinneacsuphotos@gmail.com" method="POST">
 
 <input
+id="name"
 type="text"
 name="name"
 placeholder="Name"
 required>
 
 <input
+id="email"
 type="email"
 name="email"
 placeholder="Email"
 required>
 
 <input
+id="company"
 type="text"
 name="company"
 placeholder="Company (optional)">
 
 <input
+id="project"
 type="text"
 name="project"
 placeholder="Project">
 
 <textarea
+id="message"
 name="message"
 placeholder="Tell me about your project..."
 required></textarea>
@@ -169,7 +185,14 @@ type="hidden"
 name="_captcha"
 value="false">
 
-<button type="submit">
+<input
+type="hidden"
+name="_subject"
+value="New Inquiry from valentinneacsu.com">
+
+<button
+id="send"
+type="submit">
 
 Send Inquiry
 
