@@ -210,41 +210,49 @@ send:"Invia"
 
 };
 
-document.querySelectorAll(".languages button").forEach(btn=>{
+document.querySelectorAll(".languages button").forEach(button=>{
 
-btn.onclick=()=>{
+button.addEventListener("click",()=>{
 
-const lang=btn.textContent.toLowerCase();
-
+const lang=button.dataset.lang;
 const t=translations[lang];
 
 document.querySelector('a[href="#portfolio"]').textContent=t.portfolio;
 document.querySelector('a[href="#about"]').textContent=t.about;
 document.querySelector('a[href="#contact"]').textContent=t.contact;
 
-document.querySelector(".button").textContent=t.button;
+document.getElementById("hero-title").textContent=t.title;
+document.getElementById("hero-location").textContent=t.location;
 
-document.querySelector(".hero h2").textContent=t.title;
-document.querySelector(".hero p").textContent=t.location;
+document.getElementById("hero-button").textContent=t.button;
 
-document.querySelector("#about h2").textContent=t.aboutTitle;
-document.querySelector("#about p").textContent=t.aboutText;
+document.getElementById("about-title").textContent=t.aboutTitle;
+document.getElementById("about-text").textContent=t.aboutText;
 
-document.querySelector("#contact h2").textContent=t.inquiry;
-document.querySelector("#contact p").textContent=t.subtitle;
+document.getElementById("contact-title").textContent=t.inquiry;
+document.getElementById("contact-subtitle").textContent=t.subtitle;
 
-document.querySelector('input[name="name"]').placeholder=t.name;
-document.querySelector('input[name="email"]').placeholder=t.email;
-document.querySelector('input[name="company"]').placeholder=t.company;
-document.querySelector('input[name="project"]').placeholder=t.project;
-document.querySelector('textarea[name="message"]').placeholder=t.message;
+document.getElementById("name").placeholder=t.name;
+document.getElementById("email").placeholder=t.email;
+document.getElementById("company").placeholder=t.company;
+document.getElementById("project").placeholder=t.project;
+document.getElementById("message").placeholder=t.message;
 
-document.querySelector('button[type="submit"]').textContent=t.send;
+document.getElementById("send").textContent=t.send;
 
-};
+localStorage.setItem("language",lang);
 
 });
 
+});
+
+const savedLanguage=localStorage.getItem("language");
+
+if(savedLanguage){
+
+document.querySelector(`[data-lang="${savedLanguage}"]`).click();
+
+}
 // ===== Current Year =====
 
 const year=document.querySelector("footer p");
