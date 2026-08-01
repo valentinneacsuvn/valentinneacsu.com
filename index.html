@@ -80,8 +80,8 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul class="site-nav__list">
-          <li><a class="site-nav__link" href="#portfolio" data-i18n="navPortfolio">Portfolio</a></li>
           <li><a class="site-nav__link" href="#about" data-i18n="navAbout">About</a></li>
+          <li><a class="site-nav__link" href="#portfolio" data-i18n="navPortfolio">Portfolio</a></li>
           <li><a class="site-nav__link" href="#contact" data-i18n="navContact">Inquiry</a></li>
         </ul>
       </nav>
@@ -125,6 +125,37 @@
         <span class="hero__scroll-line" aria-hidden="true"></span>
         <span class="hero__scroll-text" data-i18n="heroScroll">Scroll</span>
       </a>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="about__grid">
+        <div class="about__profile reveal">
+          <img class="about__image" src="profile.jpg" alt="Valentin Neacsu - Photographer & Filmmaker" width="6000" height="4000" loading="lazy">
+        </div>
+
+        <div class="about__content reveal">
+          <div class="about__intro">
+            <p class="section__eyebrow" data-i18n="aboutEyebrow">The Artist</p>
+            <h2 class="section__title" id="about-heading" data-i18n="aboutTitle">About</h2>
+          </div>
+
+          <p class="about__text" id="about-text" data-i18n="aboutText">
+            I'm Valentin Neacsu, a visual artist and photographer based in Switzerland.
+            My work spans portrait, fashion, commercial, automotive, events, and creative storytelling — always driven by authenticity, emotion, and timeless aesthetics.
+            I believe every project deserves its own visual identity, combining artistic vision with attention to detail to create imagery that leaves a lasting impression.
+          </p>
+
+          <ul class="services" aria-label="Services">
+            <li class="services__tag">Portrait</li>
+            <li class="services__tag">Fashion</li>
+            <li class="services__tag">Commercial</li>
+            <li class="services__tag">Automotive</li>
+            <li class="services__tag">Events</li>
+            <li class="services__tag">Creative</li>
+            <li class="services__tag">Filmmaking</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-heading">
@@ -487,37 +518,6 @@
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-heading">
-      <div class="about__grid">
-        <div class="about__profile reveal">
-          <img class="about__image" src="profile.jpg" alt="Valentin Neacsu - Photographer & Filmmaker" width="6000" height="4000" loading="lazy">
-        </div>
-
-        <div class="about__content reveal">
-          <div class="about__intro">
-            <p class="section__eyebrow" data-i18n="aboutEyebrow">The Artist</p>
-            <h2 class="section__title" id="about-heading" data-i18n="aboutTitle">About</h2>
-          </div>
-
-          <p class="about__text" id="about-text" data-i18n="aboutText">
-            I'm Valentin Neacsu, a visual artist and photographer based in Switzerland.
-            My work spans portrait, fashion, commercial, automotive, events, and creative storytelling — always driven by authenticity, emotion, and timeless aesthetics.
-            I believe every project deserves its own visual identity, combining artistic vision with attention to detail to create imagery that leaves a lasting impression.
-          </p>
-
-          <ul class="services" aria-label="Services">
-            <li class="services__tag">Portrait</li>
-            <li class="services__tag">Fashion</li>
-            <li class="services__tag">Commercial</li>
-            <li class="services__tag">Automotive</li>
-            <li class="services__tag">Events</li>
-            <li class="services__tag">Creative</li>
-            <li class="services__tag">Filmmaking</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section class="section contact" id="contact" aria-labelledby="contact-heading">
       <div class="contact__inner">
         <div class="contact__intro reveal">
@@ -526,6 +526,34 @@
           <p class="contact__subtitle" id="contact-subtitle" data-i18n="contactSubtitle">
             Let's create something meaningful together.
           </p>
+
+          <ul class="contact__details" aria-label="Contact details">
+            <li class="contact__detail">
+              <span class="contact__detail-label" data-i18n="contactEmailLabel">Email</span>
+              <a class="contact__detail-value" href="mailto:valentinneacsu75@gmail.com">valentinneacsu75@gmail.com</a>
+            </li>
+            <li class="contact__detail">
+              <span class="contact__detail-label" data-i18n="contactPhoneLabel">Phone</span>
+              <a class="contact__detail-value" href="tel:+76368737 7">+76 368 73 77</a>
+            </li>
+            <li class="contact__detail">
+              <span class="contact__detail-label" data-i18n="contactAddressLabel">Address</span>
+              <a class="contact__detail-value" href="https://www.google.com/maps/search/?api=1&amp;query=Schlosstalstrasse+98+8408+Winterthur" target="_blank" rel="noopener noreferrer">Schlosstalstrasse 98, 8408 Winterthur</a>
+            </li>
+          </ul>
+
+          <div class="contact__map">
+            <iframe
+              title="Map showing Schlosstalstrasse 98, 8408 Winterthur"
+              src="https://www.google.com/maps?q=Schlosstalstrasse%2098%2C%208408%20Winterthur&output=embed"
+              width="100%"
+              height="260"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
 
         <form
@@ -568,6 +596,11 @@
     </section>
 
   </main>
+
+  <a class="floating-cta" href="#contact" aria-label="Get in touch">
+    <span class="floating-cta__text" data-i18n="floatingCta">Get in touch</span>
+    <span class="floating-cta__icon" aria-hidden="true">&rarr;</span>
+  </a>
 
   <footer class="site-footer" role="contentinfo">
     <a

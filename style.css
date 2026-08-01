@@ -575,6 +575,111 @@ a {
   color: var(--color-gray-300);
 }
 
+.contact__details {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact__detail-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gray-400);
+}
+
+.contact__detail-value {
+  font-size: 1rem;
+  color: var(--color-gray-100);
+  transition: color 0.3s var(--ease-out);
+  width: fit-content;
+}
+
+.contact__detail-value:hover,
+.contact__detail-value:focus-visible {
+  color: var(--color-white);
+}
+
+.contact__map {
+  margin-top: 2.25rem;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--color-gray-500);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  filter: grayscale(1) contrast(1.05);
+  transition: filter 0.5s var(--ease-out);
+}
+
+.contact__map:hover {
+  filter: grayscale(0) contrast(1);
+}
+
+.contact__map iframe {
+  display: block;
+  width: 100%;
+}
+
+/* Floating Get in touch button */
+
+.floating-cta {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--color-white);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out), background 0.3s var(--ease-out);
+}
+
+.floating-cta.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-cta:hover,
+.floating-cta:focus-visible {
+  background: var(--color-gray-100);
+  transform: translateY(-2px);
+}
+
+.floating-cta__icon {
+  transition: transform 0.3s var(--ease-out);
+}
+
+.floating-cta:hover .floating-cta__icon {
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    padding: 0.75rem 1.15rem;
+    font-size: 0.68rem;
+  }
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
