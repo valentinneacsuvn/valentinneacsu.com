@@ -479,6 +479,36 @@ a {
   background: rgba(10, 10, 10, 0.12);
 }
 
+.portfolio__more {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.portfolio__load-more {
+  display: inline-block;
+  padding: 0.9375rem 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: none;
+  color: var(--color-white);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.45s var(--ease-out),
+    color 0.45s var(--ease-out),
+    border-color 0.45s var(--ease-out);
+}
+
+.portfolio__load-more:hover,
+.portfolio__load-more:focus-visible {
+  background: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-white);
+}
+
 /* About */
 
 .about {
@@ -997,8 +1027,15 @@ body.is-lightbox-open {
   }
 
   .masonry {
-    column-count: 1;
+    column-count: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(0.75rem, 1.5vw, 1.125rem);
     max-width: 32rem;
+  }
+
+  .masonry__item {
+    margin-bottom: 0;
   }
 
   .lightbox__nav {
