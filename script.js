@@ -312,7 +312,7 @@
   var galleryItems = triggers.map(function (trigger) {
     var img = trigger.querySelector("img");
     return {
-      src: img.getAttribute("src"),
+      src: img.getAttribute("data-full") || img.getAttribute("src"),
       alt: img.getAttribute("alt")
     };
   });
