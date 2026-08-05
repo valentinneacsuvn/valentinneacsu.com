@@ -32,6 +32,11 @@
       labelProject: "Project",
       labelMessage: "Message",
       submitBtn: "Send Inquiry",
+      floatingCta: "Get in touch",
+      loadMore: "Load More",
+      contactEmailLabel: "Email",
+      contactPhoneLabel: "Phone",
+      contactAddressLabel: "Address",
       lightboxClose: "Close viewer",
       lightboxPrev: "Previous image",
       lightboxNext: "Next image",
@@ -63,6 +68,11 @@
       labelProject: "Projekt",
       labelMessage: "Nachricht",
       submitBtn: "Anfrage senden",
+      floatingCta: "Kontakt aufnehmen",
+      loadMore: "Mehr laden",
+      contactEmailLabel: "E-Mail",
+      contactPhoneLabel: "Telefon",
+      contactAddressLabel: "Adresse",
       lightboxClose: "Viewer schließen",
       lightboxPrev: "Vorheriges Bild",
       lightboxNext: "Nächstes Bild",
@@ -94,6 +104,11 @@
       labelProject: "Projet",
       labelMessage: "Message",
       submitBtn: "Envoyer",
+      floatingCta: "Me contacter",
+      loadMore: "Voir plus",
+      contactEmailLabel: "E-mail",
+      contactPhoneLabel: "Téléphone",
+      contactAddressLabel: "Adresse",
       lightboxClose: "Fermer la visionneuse",
       lightboxPrev: "Image précédente",
       lightboxNext: "Image suivante",
@@ -125,6 +140,11 @@
       labelProject: "Proyecto",
       labelMessage: "Mensaje",
       submitBtn: "Enviar",
+      floatingCta: "Contactar",
+      loadMore: "Ver más",
+      contactEmailLabel: "Correo",
+      contactPhoneLabel: "Teléfono",
+      contactAddressLabel: "Dirección",
       lightboxClose: "Cerrar visor",
       lightboxPrev: "Imagen anterior",
       lightboxNext: "Imagen siguiente",
@@ -156,6 +176,11 @@
       labelProject: "Progetto",
       labelMessage: "Messaggio",
       submitBtn: "Invia",
+      floatingCta: "Contattami",
+      loadMore: "Carica altro",
+      contactEmailLabel: "Email",
+      contactPhoneLabel: "Telefono",
+      contactAddressLabel: "Indirizzo",
       lightboxClose: "Chiudi visualizzatore",
       lightboxPrev: "Immagine precedente",
       lightboxNext: "Immagine successiva",
@@ -462,5 +487,60 @@
   var footerYear = document.getElementById("footer-year");
   if (footerYear) {
     footerYear.textContent = "\u00A9 " + new Date().getFullYear() + " Valentin Neacsu";
+  }
+
+  /* --------------------------------------------------------------------------
+     Floating "Get in touch" button
+     -------------------------------------------------------------------------- */
+
+  var floatingCta = document.querySelector(".floating-cta");
+  var contactSection = document.getElementById("contact");
+
+  if (floatingCta) {
+    function updateFloatingCta() {
+      var scrolledEnough = window.scrollY > window.innerHeight * 0.6;
+
+      // Hide the button once the contact section itself is on screen
+      var contactVisible = false;
+      if (contactSection) {
+        var rect = contactSection.getBoundingClientRect();
+        contactVisible = rect.top < window.innerHeight * 0.85;
+      }
+
+      floatingCta.classList.toggle("is-visible", scrolledEnough && !contactVisible);
+    }
+
+    window.addEventListener("scroll", updateFloatingCta, { passive: true });
+    window.addEventListener("resize", updateFloatingCta, { passive: true });
+    updateFloatingCta();
+  }
+
+  /* --------------------------------------------------------------------------
+     Portfolio "Load More"
+     -------------------------------------------------------------------------- */
+
+  var galleryFigures = Array.from(document.querySelectorAll(".masonry .masonry__item"));
+  var loadMoreBtn = document.getElementById("load-more");
+  var loadMoreWrap = document.querySelector(".portfolio__more");
+  var loadMoreBatch = 15;
+  var visibleCount = 0;
+
+  function updateGalleryVisibility() {
+    galleryFigures.forEach(function (fig, i) {
+      fig.style.display = i < visibleCount ? "" : "none";
+    });
+    if (loadMoreWrap) {
+      loadMoreWrap.style.display = visibleCount >= galleryFigures.length ? "none" : "";
+    }
+  }
+
+  if (galleryFigures.length && loadMoreBtn) {
+    visibleCount = Math.min(loadMoreBatch, galleryFigures.length);
+    updateGalleryVisibility();
+
+    loadMoreBtn.addEventListener("click", function () {
+      visibleCount = Math.min(visibleCount + loadMoreBatch, galleryFigures.length);
+      updateGalleryVisibility();
+    });
   }
 })();
