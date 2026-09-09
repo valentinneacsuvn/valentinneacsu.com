@@ -12,16 +12,22 @@
       navPortfolio: "Portfolio",
       navAbout: "About",
       navContact: "Inquiry",
-      heroEyebrow: "Photography & Filmmaking",
+      heroEyebrow: "Photography • Video",
       heroLocation: "Based in Switzerland.\nAvailable worldwide.",
       heroCta: "View Portfolio",
       heroScroll: "Scroll",
       portfolioEyebrow: "Selected Work",
       portfolioTitle: "Portfolio",
+      tabPhoto: "Photography",
+      tabVideo: "Video",
+      videoComingSoon: "Video coming soon",
       aboutEyebrow: "The Artist",
       aboutTitle: "About",
-      aboutText:
-        "I'm Valentin Neacsu, a visual artist and photographer based in Switzerland. My work spans portrait, fashion, commercial, automotive, events, and creative storytelling — always driven by authenticity, emotion, and timeless aesthetics. I believe every project deserves its own visual identity, combining artistic vision with attention to detail to create imagery that leaves a lasting impression.",
+      aboutTagline: "Photography and video that reflect who you are",
+      aboutP1:
+        "I'm Valentin Neacsu, a photographer and video creator based in Switzerland. I create expressive imagery for people and businesses, combining an artistic eye with an interest in their character, craft and dedication.",
+      aboutP2:
+        "Each project starts with understanding what matters to you, then translating it into photographs and videos that represent you.",
       contactEyebrow: "Get in Touch",
       contactTitle: "Inquiry",
       contactSubtitle: "Let's create something meaningful together.",
@@ -31,7 +37,7 @@
       labelOptional: "(optional)",
       labelProject: "Project",
       labelMessage: "Message",
-      submitBtn: "Send Inquiry",
+      submitBtn: "Contact",
       floatingCta: "Get in touch",
       loadMore: "Load More",
       contactEmailLabel: "Email",
@@ -48,16 +54,22 @@
       navPortfolio: "Portfolio",
       navAbout: "Über mich",
       navContact: "Anfrage",
-      heroEyebrow: "Fotografie & Filmmaking",
+      heroEyebrow: "Fotografie • Video",
       heroLocation: "Mit Sitz in der Schweiz.\nWeltweit verfügbar.",
       heroCta: "Portfolio ansehen",
       heroScroll: "Scrollen",
       portfolioEyebrow: "Ausgewählte Arbeiten",
       portfolioTitle: "Portfolio",
+      tabPhoto: "Fotografie",
+      tabVideo: "Video",
+      videoComingSoon: "Video folgt in Kürze",
       aboutEyebrow: "Der Künstler",
       aboutTitle: "Über mich",
-      aboutText:
-        "Ich bin Valentin Neacsu, Visual Artist und Fotograf mit Sitz in der Schweiz. Meine Arbeit umfasst Portrait-, Fashion-, Commercial-, Automotive- und Eventfotografie sowie kreatives Storytelling — stets getragen von Authentizität, Emotion und zeitloser Ästhetik.",
+      aboutTagline: "Fotografie und Video, die zeigen, wer du bist",
+      aboutP1:
+        "Ich bin Valentin Neacsu, Fotograf und Videoersteller aus der Schweiz. Ich schaffe ausdrucksstarke Bilder für Menschen und Unternehmen – mit einem künstlerischen Blick und dem Interesse an Charakter, Handwerk und Leidenschaft.",
+      aboutP2:
+        "Jedes Projekt beginnt damit, zu verstehen, was dir wichtig ist – und das dann in Fotos und Videos zu übersetzen, die dich repräsentieren.",
       contactEyebrow: "Kontakt",
       contactTitle: "Anfrage",
       contactSubtitle: "Lass uns gemeinsam etwas Besonderes schaffen.",
@@ -67,7 +79,7 @@
       labelOptional: "(optional)",
       labelProject: "Projekt",
       labelMessage: "Nachricht",
-      submitBtn: "Anfrage senden",
+      submitBtn: "Kontakt",
       floatingCta: "Kontakt aufnehmen",
       loadMore: "Mehr laden",
       contactEmailLabel: "E-Mail",
@@ -84,16 +96,22 @@
       navPortfolio: "Portfolio",
       navAbout: "À propos",
       navContact: "Contact",
-      heroEyebrow: "Photographie & Filmmaking",
+      heroEyebrow: "Photographie • Vidéo",
       heroLocation: "Basé en Suisse.\nDisponible dans le monde entier.",
       heroCta: "Voir le Portfolio",
       heroScroll: "Défiler",
       portfolioEyebrow: "Travaux Sélectionnés",
       portfolioTitle: "Portfolio",
+      tabPhoto: "Photographie",
+      tabVideo: "Vidéo",
+      videoComingSoon: "Vidéo à venir",
       aboutEyebrow: "L'Artiste",
       aboutTitle: "À propos",
-      aboutText:
-        "Je suis Valentin Neacsu, artiste visuel et photographe basé en Suisse. Mon travail couvre le portrait, la mode, la photographie commerciale, automobile, les événements et le storytelling visuel — toujours guidé par l'authenticité, l'émotion et une esthétique intemporelle.",
+      aboutTagline: "Photographie et vidéo qui vous ressemblent",
+      aboutP1:
+        "Je suis Valentin Neacsu, photographe et créateur vidéo basé en Suisse. Je crée des images expressives pour les personnes et les entreprises, alliant un regard artistique à un intérêt pour leur caractère, leur savoir-faire et leur engagement.",
+      aboutP2:
+        "Chaque projet commence par comprendre ce qui compte pour vous, puis à le traduire en photographies et vidéos qui vous représentent.",
       contactEyebrow: "Contact",
       contactTitle: "Contact",
       contactSubtitle: "Créons quelque chose d'unique ensemble.",
@@ -103,7 +121,7 @@
       labelOptional: "(optionnel)",
       labelProject: "Projet",
       labelMessage: "Message",
-      submitBtn: "Envoyer",
+      submitBtn: "Contact",
       floatingCta: "Me contacter",
       loadMore: "Voir plus",
       contactEmailLabel: "E-mail",
@@ -120,16 +138,22 @@
       navPortfolio: "Portfolio",
       navAbout: "Sobre mí",
       navContact: "Contacto",
-      heroEyebrow: "Fotografía & Filmmaking",
+      heroEyebrow: "Fotografía • Vídeo",
       heroLocation: "Con base en Suiza.\nDisponible en todo el mundo.",
       heroCta: "Ver Portfolio",
       heroScroll: "Desplazar",
       portfolioEyebrow: "Trabajo Seleccionado",
       portfolioTitle: "Portfolio",
+      tabPhoto: "Fotografía",
+      tabVideo: "Vídeo",
+      videoComingSoon: "Vídeo próximamente",
       aboutEyebrow: "El Artista",
       aboutTitle: "Sobre mí",
-      aboutText:
-        "Soy Valentin Neacsu, artista visual y fotógrafo con base en Suiza. Mi trabajo abarca retrato, moda, fotografía comercial, automoción, eventos y narrativa visual — siempre con un enfoque en la autenticidad, la emoción y una estética atemporal.",
+      aboutTagline: "Fotografía y vídeo que reflejan quién eres",
+      aboutP1:
+        "Soy Valentin Neacsu, fotógrafo y creador de vídeo afincado en Suiza. Creo imágenes expresivas para personas y empresas, combinando una mirada artística con un interés genuino por su carácter, oficio y dedicación.",
+      aboutP2:
+        "Cada proyecto comienza por entender lo que importa, y luego se traduce en fotografías y vídeos que te representan.",
       contactEyebrow: "Contacto",
       contactTitle: "Contacto",
       contactSubtitle: "Creemos algo único juntos.",
@@ -139,7 +163,7 @@
       labelOptional: "(opcional)",
       labelProject: "Proyecto",
       labelMessage: "Mensaje",
-      submitBtn: "Enviar",
+      submitBtn: "Contactar",
       floatingCta: "Contactar",
       loadMore: "Ver más",
       contactEmailLabel: "Correo",
@@ -156,16 +180,22 @@
       navPortfolio: "Portfolio",
       navAbout: "Chi sono",
       navContact: "Contatti",
-      heroEyebrow: "Fotografia & Filmmaking",
+      heroEyebrow: "Fotografia • Video",
       heroLocation: "Con sede in Svizzera.\nDisponibile in tutto il mondo.",
       heroCta: "Esplora Portfolio",
       heroScroll: "Scorri",
       portfolioEyebrow: "Lavori Selezionati",
       portfolioTitle: "Portfolio",
+      tabPhoto: "Fotografia",
+      tabVideo: "Video",
+      videoComingSoon: "Video in arrivo",
       aboutEyebrow: "L'Artista",
       aboutTitle: "Chi sono",
-      aboutText:
-        "Sono Valentin Neacsu, artista visivo e fotografo con sede in Svizzera. Il mio lavoro comprende ritratto, moda, fotografia commerciale, automotive, eventi e storytelling creativo — sempre guidato da autenticità, emozione ed estetica senza tempo.",
+      aboutTagline: "Fotografia e video che rispecchiano chi sei",
+      aboutP1:
+        "Sono Valentin Neacsu, fotografo e video creator con base in Svizzera. Creo immagini espressive per persone e aziende, unendo uno sguardo artistico a un interesse per il loro carattere, il loro mestiere e la loro dedizione.",
+      aboutP2:
+        "Ogni progetto inizia capendo ciò che conta per te, per tradurlo poi in fotografie e video che ti rappresentano.",
       contactEyebrow: "Contatti",
       contactTitle: "Contatti",
       contactSubtitle: "Creiamo qualcosa di unico insieme.",
@@ -175,7 +205,7 @@
       labelOptional: "(opzionale)",
       labelProject: "Progetto",
       labelMessage: "Messaggio",
-      submitBtn: "Invia",
+      submitBtn: "Contatta",
       floatingCta: "Contattami",
       loadMore: "Carica altro",
       contactEmailLabel: "Email",
@@ -541,6 +571,31 @@
     loadMoreBtn.addEventListener("click", function () {
       visibleCount = Math.min(visibleCount + loadMoreBatch, galleryFigures.length);
       updateGalleryVisibility();
+    });
+  }
+
+  /* --------------------------------------------------------------------------
+     Portfolio tabs (Photography / Video)
+     -------------------------------------------------------------------------- */
+
+  var portfolioTabs = Array.from(document.querySelectorAll(".portfolio__tab"));
+
+  if (portfolioTabs.length) {
+    portfolioTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var target = tab.getAttribute("data-tab");
+
+        portfolioTabs.forEach(function (btn) {
+          var isActive = btn === tab;
+          btn.classList.toggle("is-active", isActive);
+          btn.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+
+        var panelPhoto = document.getElementById("panel-photo");
+        var panelVideo = document.getElementById("panel-video");
+        if (panelPhoto) panelPhoto.classList.toggle("is-hidden", target !== "photo");
+        if (panelVideo) panelVideo.classList.toggle("is-hidden", target !== "video");
+      });
     });
   }
 })();

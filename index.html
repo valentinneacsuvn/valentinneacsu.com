@@ -112,7 +112,7 @@
       <div class="hero__veil" aria-hidden="true"></div>
 
       <div class="hero__content">
-        <p class="hero__eyebrow" data-i18n="heroEyebrow">Photography &amp; Filmmaking</p>
+        <p class="hero__eyebrow" data-i18n="heroEyebrow">Photography &bull; Video</p>
         <h1 class="hero__title" id="hero-heading">Valentin Neacsu</h1>
         <p class="hero__location" id="hero-location" data-i18n="heroLocation">
           Based in Switzerland.<br>
@@ -139,10 +139,16 @@
             <h2 class="section__title" id="about-heading" data-i18n="aboutTitle">About</h2>
           </div>
 
-          <p class="about__text" id="about-text" data-i18n="aboutText">
-            I'm Valentin Neacsu, a visual artist and photographer based in Switzerland.
-            My work spans portrait, fashion, commercial, automotive, events, and creative storytelling — always driven by authenticity, emotion, and timeless aesthetics.
-            I believe every project deserves its own visual identity, combining artistic vision with attention to detail to create imagery that leaves a lasting impression.
+          <p class="about__tagline" data-i18n="aboutTagline">
+            Photography and video that reflect who you are
+          </p>
+
+          <p class="about__text" id="about-text" data-i18n="aboutP1">
+            I'm Valentin Neacsu, a photographer and video creator based in Switzerland. I create expressive imagery for people and businesses, combining an artistic eye with an interest in their character, craft and dedication.
+          </p>
+
+          <p class="about__text" data-i18n="aboutP2">
+            Each project starts with understanding what matters to you, then translating it into photographs and videos that represent you.
           </p>
 
           <ul class="services" aria-label="Services">
@@ -164,6 +170,12 @@
         <h2 class="section__title" id="portfolio-heading" data-i18n="portfolioTitle">Portfolio</h2>
       </div>
 
+      <div class="portfolio__tabs" role="tablist" aria-label="Portfolio categories">
+        <button class="portfolio__tab is-active" type="button" role="tab" aria-selected="true" data-tab="photo" data-i18n="tabPhoto">Photography</button>
+        <button class="portfolio__tab" type="button" role="tab" aria-selected="false" data-tab="video" data-i18n="tabVideo">Video</button>
+      </div>
+
+      <div class="portfolio__panel" id="panel-photo" role="tabpanel">
       <div class="masonry" role="list" aria-label="Portfolio gallery">
         <figure class="masonry__item reveal" role="listitem">
           <button class="masonry__trigger" type="button" data-index="0" aria-label="Open image 1 of 60">
@@ -469,6 +481,13 @@
 
       <div class="portfolio__more">
         <button class="portfolio__load-more" type="button" id="load-more" data-i18n="loadMore">Load More</button>
+      </div>
+      </div>
+
+      <div class="portfolio__panel is-hidden" id="panel-video" role="tabpanel">
+        <div class="video__placeholder">
+          <p class="video__coming-soon" data-i18n="videoComingSoon">Video coming soon</p>
+        </div>
       </div>
     </section>
 

@@ -1087,3 +1087,64 @@ body.is-lightbox-open {
     transform: none;
   }
 }
+
+
+/* ==========================================================================
+   About tagline + Portfolio tabs + Video placeholder
+   ========================================================================== */
+
+/* About tagline */
+.about__tagline {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.5;
+}
+
+/* Portfolio tabs */
+.portfolio__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.portfolio__tab {
+  padding: 0.5rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, background 0.3s;
+}
+
+.portfolio__tab.is-active,
+.portfolio__tab:hover,
+.portfolio__tab:focus-visible {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.portfolio__panel.is-hidden {
+  display: none;
+}
+
+/* Video placeholder */
+.video__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+}
+
+.video__coming-soon {
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+}
