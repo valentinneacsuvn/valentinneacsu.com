@@ -21,13 +21,15 @@
       tabPhoto: "Photography",
       tabVideo: "Video",
       videoComingSoon: "Video coming soon",
-      aboutEyebrow: "The Artist",
+      aboutEyebrow: "Behind the Camera",
       aboutTitle: "About",
       aboutTagline: "Photography and video that reflect who you are",
       aboutP1:
         "I'm Valentin Neacsu, a photographer and video creator based in Switzerland. I create expressive imagery for people and businesses, combining an artistic eye with an interest in their character, craft and dedication.",
       aboutP2:
         "Each project starts with understanding what matters to you, then translating it into photographs and videos that represent you.",
+      aboutAvailable:
+        "Available for portraits, business photography and video projects.",
       contactEyebrow: "Get in Touch",
       contactTitle: "Inquiry",
       contactSubtitle: "Let's create something meaningful together.",
@@ -63,13 +65,15 @@
       tabPhoto: "Fotografie",
       tabVideo: "Video",
       videoComingSoon: "Video folgt in Kürze",
-      aboutEyebrow: "Der Künstler",
+      aboutEyebrow: "Hinter der Kamera",
       aboutTitle: "Über mich",
       aboutTagline: "Fotografie und Video, die zeigen, wer du bist",
       aboutP1:
         "Ich bin Valentin Neacsu, Fotograf und Videoersteller aus der Schweiz. Ich schaffe ausdrucksstarke Bilder für Menschen und Unternehmen – mit einem künstlerischen Blick und dem Interesse an Charakter, Handwerk und Leidenschaft.",
       aboutP2:
         "Jedes Projekt beginnt damit, zu verstehen, was dir wichtig ist – und das dann in Fotos und Videos zu übersetzen, die dich repräsentieren.",
+      aboutAvailable:
+        "Verfügbar für Porträts, Business-Fotografie und Videoprojekte.",
       contactEyebrow: "Kontakt",
       contactTitle: "Anfrage",
       contactSubtitle: "Lass uns gemeinsam etwas Besonderes schaffen.",
@@ -105,13 +109,14 @@
       tabPhoto: "Photographie",
       tabVideo: "Vidéo",
       videoComingSoon: "Vidéo à venir",
-      aboutEyebrow: "L'Artiste",
+      aboutEyebrow: "Derrière l'objectif",
       aboutTitle: "À propos",
       aboutTagline: "Photographie et vidéo qui vous ressemblent",
       aboutP1:
         "Je suis Valentin Neacsu, photographe et créateur vidéo basé en Suisse. Je crée des images expressives pour les personnes et les entreprises, alliant un regard artistique à un intérêt pour leur caractère, leur savoir-faire et leur engagement.",
       aboutP2:
         "Chaque projet commence par comprendre ce qui compte pour vous, puis à le traduire en photographies et vidéos qui vous représentent.",
+      aboutAvailable: "Disponible pour des portraits, de la photographie d'entreprise et des projets vidéo.",
       contactEyebrow: "Contact",
       contactTitle: "Contact",
       contactSubtitle: "Créons quelque chose d'unique ensemble.",
@@ -147,13 +152,14 @@
       tabPhoto: "Fotografía",
       tabVideo: "Vídeo",
       videoComingSoon: "Vídeo próximamente",
-      aboutEyebrow: "El Artista",
+      aboutEyebrow: "Detrás de la cámara",
       aboutTitle: "Sobre mí",
       aboutTagline: "Fotografía y vídeo que reflejan quién eres",
       aboutP1:
         "Soy Valentin Neacsu, fotógrafo y creador de vídeo afincado en Suiza. Creo imágenes expresivas para personas y empresas, combinando una mirada artística con un interés genuino por su carácter, oficio y dedicación.",
       aboutP2:
         "Cada proyecto comienza por entender lo que importa, y luego se traduce en fotografías y vídeos que te representan.",
+      aboutAvailable: "Disponible para retratos, fotografía empresarial y proyectos de vídeo.",
       contactEyebrow: "Contacto",
       contactTitle: "Contacto",
       contactSubtitle: "Creemos algo único juntos.",
@@ -189,13 +195,14 @@
       tabPhoto: "Fotografia",
       tabVideo: "Video",
       videoComingSoon: "Video in arrivo",
-      aboutEyebrow: "L'Artista",
+      aboutEyebrow: "Dietro la macchina fotografica",
       aboutTitle: "Chi sono",
       aboutTagline: "Fotografia e video che rispecchiano chi sei",
       aboutP1:
         "Sono Valentin Neacsu, fotografo e video creator con base in Svizzera. Creo immagini espressive per persone e aziende, unendo uno sguardo artistico a un interesse per il loro carattere, il loro mestiere e la loro dedizione.",
       aboutP2:
         "Ogni progetto inizia capendo ciò che conta per te, per tradurlo poi in fotografie e video che ti rappresentano.",
+      aboutAvailable: "Disponibile per ritratti, fotografia aziendale e progetti video.",
       contactEyebrow: "Contatti",
       contactTitle: "Contatti",
       contactSubtitle: "Creiamo qualcosa di unico insieme.",
