@@ -781,6 +781,25 @@ a {
   color: var(--color-white);
 }
 
+.form-privacy {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-400);
+}
+
+.form-privacy__link {
+  color: var(--color-gray-200);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s var(--ease-out);
+}
+
+.form-privacy__link:hover,
+.form-privacy__link:focus-visible {
+  color: var(--color-white);
+}
+
 /* Footer */
 
 .site-footer {
@@ -803,6 +822,12 @@ a {
 .site-footer__link:hover,
 .site-footer__link:focus-visible {
   color: var(--color-white);
+}
+
+.site-footer__legal {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .site-footer__copy {
