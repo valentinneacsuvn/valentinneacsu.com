@@ -337,6 +337,22 @@
      Lightbox
      -------------------------------------------------------------------------- */
 
+  var masonry = document.querySelector(".masonry");
+  if (masonry) {
+    var figuresToShuffle = Array.from(masonry.children);
+    for (var shuffleIndex = figuresToShuffle.length - 1; shuffleIndex > 0; shuffleIndex--) {
+      var randomIndex = Math.floor(Math.random() * (shuffleIndex + 1));
+      var temporaryFigure = figuresToShuffle[shuffleIndex];
+      figuresToShuffle[shuffleIndex] = figuresToShuffle[randomIndex];
+      figuresToShuffle[randomIndex] = temporaryFigure;
+    }
+    var shuffledFigures = document.createDocumentFragment();
+    figuresToShuffle.forEach(function (figure) {
+      shuffledFigures.appendChild(figure);
+    });
+    masonry.appendChild(shuffledFigures);
+  }
+
   var triggers = Array.from(document.querySelectorAll(".masonry__trigger"));
   var lightbox = document.getElementById("lightbox");
   var lightboxImage = lightbox ? lightbox.querySelector(".lightbox__image") : null;
